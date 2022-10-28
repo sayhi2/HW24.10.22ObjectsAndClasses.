@@ -15,17 +15,18 @@ public class Book {
 
     private String bookName;
     private String authorName;
-    public int editionYear;
+    int year;
 
 
 
-    public Book(String authorName, int editionYear, String bookName) {
+    public Book(String authorName,  String bookName, int year) {
         this.bookName = bookName;
         this.authorName = authorName;
-        this.editionYear = editionYear;
+        this.year = year;
+
     }
-    //Book JapaneseCandlestickChartingTechniques = new Book(" Steve Nison ", 1991, " Japanese Candlestick charting Techniques.");
-    //Book BorisGodunov = new Book(" Pushkin Alexandr ", 1831, " Boris Godunov ");
+    //Book ChartingTechniques = new Book(" Steve Nison ", 1991, " Charting Techniques.");
+    //Book BorisGodunov = new Book(" Pushkin Alexander ", 1831, " Boris Godunov ");
 
     public String getBookName() {
         return bookName;
@@ -33,12 +34,8 @@ public class Book {
     public String getAuthorName() {
         return authorName;
     }
-    public int getEditionYear() {
-        return editionYear;
-    }
-    public void setEditionYear() {
-        this.editionYear = editionYear;
-    }
+    public int getYear() {return year; }
+    public void setYear() {this.year = year; }
 
 
 }

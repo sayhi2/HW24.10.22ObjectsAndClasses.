@@ -1,23 +1,17 @@
 public class Author {
 
-    private String steve;
-    private String nison;
+    private String authorsName;
 
-    public void Author(String steve, String nison) {
+    public void Author(String authorsName) {
 
-        this.steve = steve;
-        this.nison = nison;
+        this.authorsName = authorsName;
     }
-
-    public String getSteve() {
-        return steve;
+    public String getAuthorsName()
+    {
+        return authorsName;
     }
+   }
 
-    public String getNison() {
-        return nison;
-
-    }
-}
 
 
 

@@ -5,22 +5,22 @@ public class Main {
 
         String bookName ;
         String authorName;
-        String editionYear;
+        String year;
 
-        Book borisgodunov = new Book (" Pushkin Alexandr ", 1831, " Борис Годунов ");
-        Book JapaneseCandlestickСhartingTechniques = new Book("Steve Nison", 1991, "Japanese Candlestick charting Techniques.");
+        Book borisgodunov = new Book (" Pushkin Alexander ", " Борис Годунов ", 1831 );
+        Book СhartingTechniques = new Book("Steve Nison", "Charting Techniques.", 1991 );
 
-        borisgodunov.setEditionYear();
-        borisgodunov.getEditionYear();
+        borisgodunov.setYear();
+        borisgodunov.getYear();
         borisgodunov.getAuthorName();
         borisgodunov.getBookName();
 
-        JapaneseCandlestickСhartingTechniques.getEditionYear();
-        JapaneseCandlestickСhartingTechniques.getBookName();
-        JapaneseCandlestickСhartingTechniques.getAuthorName();
+        СhartingTechniques.getYear();
+        СhartingTechniques.getBookName();
+        СhartingTechniques.getAuthorName();
 
-        System.out.println(" Книга " + borisgodunov.getBookName() + ", автор " + borisgodunov.getAuthorName() + ", год издания " + borisgodunov.getEditionYear());
-        System.out.println(" Книга " + JapaneseCandlestickСhartingTechniques.getBookName() + ", автор " + JapaneseCandlestickСhartingTechniques.getAuthorName() +
-                ", год издания " + JapaneseCandlestickСhartingTechniques.getEditionYear);
+        System.out.println(" Книга " + borisgodunov.getBookName() + ", автор " + borisgodunov.getAuthorName() + ", год издания " + borisgodunov.getYear());
+        System.out.println(" Книга " + СhartingTechniques.getBookName() + ", автор " + СhartingTechniques.getAuthorName() +
+                ", год издания " + СhartingTechniques.getYear());
     }
 }
