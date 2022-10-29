@@ -4,23 +4,28 @@ public class Main {
         System.out.println("Books and authors");
 
         String bookName ;
-        String authorName;
-        String year;
+        Author author;
+        String editionYear;
 
-        Book borisgodunov = new Book (" Pushkin Alexander ", " Борис Годунов ", 1831 );
-        Book СhartingTechniques = new Book("Steve Nison", "Charting Techniques.", 1991 );
 
-        borisgodunov.setYear();
-        borisgodunov.getYear();
-        borisgodunov.getAuthorName();
+        Book borisgodunov = new Book ("author1", " Борис Годунов ", 1831 );
+        Book СhartingTechniques = new Book("author2", "Charting Techniques.", 1991 );
+
+        Author author1 = new Author("Alexander", "Pushkin");
+        Author author2 = new Author( "Steve", "Nison");
+
+        borisgodunov.setEditionYear();
+        borisgodunov.getEditionYear();
+        borisgodunov.getAuthor();
         borisgodunov.getBookName();
 
-        СhartingTechniques.getYear();
+        СhartingTechniques.getEditionYear();
         СhartingTechniques.getBookName();
-        СhartingTechniques.getAuthorName();
+        СhartingTechniques.getAuthor();
 
-        System.out.println(" Книга " + borisgodunov.getBookName() + ", автор " + borisgodunov.getAuthorName() + ", год издания " + borisgodunov.getYear());
-        System.out.println(" Книга " + СhartingTechniques.getBookName() + ", автор " + СhartingTechniques.getAuthorName() +
-                ", год издания " + СhartingTechniques.getYear());
+        System.out.println(" Книга " + borisgodunov.getBookName() + ", автор " + borisgodunov.getAuthor() +
+                ", год издания " + borisgodunov.getEditionYear());
+        System.out.println(" Книга " + СhartingTechniques.getBookName() + ", автор " + СhartingTechniques.getAuthor() +
+                ", год издания " + СhartingTechniques.getEditionYear());
     }
 }

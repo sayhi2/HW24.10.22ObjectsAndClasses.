@@ -12,30 +12,25 @@ public class Book {
 //Требуется создать отдельный класс для запуска приложения и объявить метод main в нем.
 //7. В том же методе main изменить год публикации одной из книг с помощью сеттера.
 //
+    private final String bookName;
+    private Author author;
+    private int editionYear;
 
-    private String bookName;
-    private String authorName;
-    int year;
-
-
-
-    public Book(String authorName,  String bookName, int year) {
+    public Book(Author author, String bookName, int year) {
         this.bookName = bookName;
-        this.authorName = authorName;
-        this.year = year;
-
+        this.author = author;
+        this.editionYear = editionYear;
     }
     //Book ChartingTechniques = new Book(" Steve Nison ", 1991, " Charting Techniques.");
     //Book BorisGodunov = new Book(" Pushkin Alexander ", 1831, " Boris Godunov ");
-
     public String getBookName() {
         return bookName;
     }
-    public String getAuthorName() {
-        return authorName;
+    public Author getAuthor() {
+        return author;
     }
-    public int getYear() {return year; }
-    public void setYear() {this.year = year; }
+    public int getEditionYear() {return editionYear; }
+    public void setEditionYear() {this.editionYear = editionYear; }
 
 
 }
