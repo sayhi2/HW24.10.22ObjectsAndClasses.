@@ -1,31 +1,27 @@
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Books and authors");
-
-        String bookName ;
+        String bookName;
         Author author;
         String editionYear;
 
 
-        Book borisgodunov = new Book ("author1", " Борис Годунов ", 1831 );
-        Book СhartingTechniques = new Book("author2", "Charting Techniques.", 1991 );
+        Author author1 = new Author("Alexander ", "Pushkin");
+        Book book1 = new Book(author1, "Boris Godunov ", 1831);
 
-        Author author1 = new Author("Alexander", "Pushkin");
-        Author author2 = new Author( "Steve", "Nison");
+        Author author2 = new Author("Steve", " Nison");
+        Book book2 = new Book(author2, "Japanese Candlestick Charting Techniques.", 1991);
 
-        borisgodunov.setEditionYear();
-        borisgodunov.getEditionYear();
-        borisgodunov.getAuthor();
-        borisgodunov.getBookName();
+        System.out.println("Автор: " + author1.getName());
+        System.out.println(" Название книги: " + book1.getBookName());
+        System.out.println(" Год издания книги: " + book1.getEditionYear());
+        book1.setEditionYear(1831);
+        System.out.println(" Год переиздания книги: " + book1.getEditionYear());
 
-        СhartingTechniques.getEditionYear();
-        СhartingTechniques.getBookName();
-        СhartingTechniques.getAuthor();
-
-        System.out.println(" Книга " + borisgodunov.getBookName() + ", автор " + borisgodunov.getAuthor() +
-                ", год издания " + borisgodunov.getEditionYear());
-        System.out.println(" Книга " + СhartingTechniques.getBookName() + ", автор " + СhartingTechniques.getAuthor() +
-                ", год издания " + СhartingTechniques.getEditionYear());
+        System.out.println("Автор: " + author2.getName());
+        System.out.println(" Название книги: " + book2.getBookName());
+        System.out.println(" Год издания книги: " + book2.getEditionYear());
+        book1.setEditionYear(1991);
+        System.out.println(" Год переиздания книги: " + book2.getEditionYear());
     }
 }
